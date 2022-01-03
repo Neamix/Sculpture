@@ -2,6 +2,7 @@
   <div class="container bg-silver-1000 min-h-screen	min-w-full">
       <Navbar/>
       <Header/>
+      <LowerNav/>
   </div>
 </template>
 
@@ -12,39 +13,7 @@ body {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-}
-
-
-
-header {
-  background: url('assets/images/vintage-old-rustic-cutlery-dark.jpg');
-  background-size: cover;
-}
-
-header .overlay {
-  @apply bg-silver-1000; 
-  @apply absolute;
-  top: 0;
-  opacity: 0.5;
-}
-
-header::before {
-  content:'';
-  height: 45px;
-  @apply w-full;
-    content: '';
-    height: 387px;
-    background: linear-gradient(358deg, black, black ,transparent);
-    width: 100%;
-    display: block;
-    position: absolute;
-    bottom: 0;
-}
-
-header h2 {
-  font-size: 50px;
-  width: 64%;
+  font-family: 'PT Sans';
 }
 
 .btn {
@@ -93,11 +62,13 @@ header h2 {
 <script>
 import Header from '@/components/Header.vue'
 import Navbar from '@/components/Navbar.vue'
+import LowerNav from '@/components/LowerNav.vue'
 
 export default ({
   components: {
     Header,
-    Navbar
+    Navbar,
+    LowerNav
    }
 })
 </script>

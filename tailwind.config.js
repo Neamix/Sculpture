@@ -11,10 +11,10 @@ module.exports = {
   presets: [],
   theme: {
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
+      sm: {'max': '639px'},
+      md: {'max': '767px'},
+      lg: {'max': '1027px'},
+      xl: '1279px',
     },
     colors: {
       transparent: 'transparent',
@@ -287,6 +287,7 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
+       head: '50px'
     },
     fontWeight: {
       hairline: '100',

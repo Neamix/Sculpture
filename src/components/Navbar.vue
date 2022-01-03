@@ -1,5 +1,5 @@
 <template>
-    <div class="pl-10 pt-5 flex absolute w-full z-10">
+    <div class="pl-10 pt-5  absolute w-full z-10 flex lg:hidden">
         <div class="logo"></div>
         <ul class="flex">
             <li class="menu-item">
@@ -15,8 +15,14 @@
         <ul class="flex ml-auto mr-5 w-7/12">
             <li class="menu-item w-5/12">
                 <form>
-                <input class="input rounded-full p-1.5 text-sm pl-4  text-white outline-none bg-gray-1000 w-full" type="search" placeholder="Search...">
+                    <i class="ri-search-line absolute search-icon text-xs text-white"></i>
+                    <input class="input rounded-full p-1.5 text-sm pl-8 text-white outline-none bg-gray-1000 w-full" type="search" placeholder="Search...">
                 </form>
+            </li>
+            <li class="menu-item ml-auto user_tab flex  items-center">
+                <img src="../assets/images/users_images/user1.jpg" alt="Abdalrhman Hussin" class="profile_image rounded-full" />
+                <span class="text-white text-xs font-bold ml-2">Abdalrhman Hussin</span>
+                <i class="ri-arrow-down-s-line pl-2 text-white"></i>
             </li>
             <li class="menu-item">
                 <form class="relative">
@@ -84,6 +90,30 @@
         </ul>
     </div>
 </template>
+
+<style scoped>
+    form .search-icon {        
+        padding: 9px 8px;
+        color: #A0AEA2;
+    }
+
+    .user_tab {
+        height: fit-content;
+        @apply bg-silver-1000;
+        padding: 3px 8px;
+        border-radius: 200px;
+    }
+
+    .user_tab .profile_image {
+        width: 20px;
+        height: 20px;
+    }
+
+    .user_tab span {
+        font-size: 11px;
+    }
+    
+</style>
 
 <script>
 export default {
