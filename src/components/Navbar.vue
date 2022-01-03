@@ -54,17 +54,21 @@
 
 <script>
 export default {
-  name: 'Navbar',
-  data() {
-    return {
-        dropDownProfile: false,
-        dropDownSearch: false,
-        searchResultArray: []
+    name: 'Navbar',
+    data() {
+        return {
+            dropDownProfile: false,
+            dropDownSearch: false,
+            searchResultArray: []
+        }
+    },
+
+    methods: {
+        toggleSearchDropMenu() {
+            if (this.searchResultArray) {
+                this.dropDownSearch = true;
+            }
+        }
     }
-  },
-
-  methods: {
-
-  }
 }
 </script>
