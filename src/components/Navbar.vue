@@ -1,5 +1,4 @@
 <template>
-<template>
     <div class="pl-10 pt-5  absolute w-full z-10 flex lg:hidden">
         <div class="logo"></div>
         <ul class="flex">
