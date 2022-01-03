@@ -79,6 +79,15 @@ header h2 {
     width: 50%;
 }
 
+.drop-menu {
+  top: 39px;
+  left: 0;
+  @apply absolute; 
+  @apply w-full; 
+  @apply bg-silver-1000; 
+  @apply rounded-md p-2
+}
+
 </style>
 
 <script>
