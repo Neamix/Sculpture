@@ -1,5 +1,6 @@
 <template>
   <div class="container bg-silver-1000 min-h-screen	min-w-full">
+      <Header/>
       <Navbar/>
       <header class="w-full min-h-screen flex items-center relative">
          <div class="p-10 relative z-10">
@@ -99,12 +100,14 @@ header h2 {
 </style>
 
 <script>
+import Header from '@/components/Header.vue'
 import Navbar from '@/components/Navbar.vue'
 
 export default ({
   components: {
+    Header,
     Navbar
-  }
+   }
 })
 </script>
 
