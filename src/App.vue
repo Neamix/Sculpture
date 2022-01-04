@@ -57,6 +57,27 @@ body {
   @apply rounded-md p-2
 }
 
+/** 
+Animated classes
+*/
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all .3s linear;
+}
+
+.slide-enter-to,
+.slide-leave-from {
+  opacity: 1;
+  top: 39px;
+}
+
+.slide-leave-to,
+.slide-enter-from {
+  opacity: 0;
+  top: 55px;
+}
+
 </style>
 
 <script>
